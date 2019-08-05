@@ -18,3 +18,4 @@ RUN buildDeps="sudo make gcc g++ libc-dev ruby-dev" \
 
 # Copy configuration files
 COPY ./conf/*.conf /fluentd/etc/
+COPY ./conf/conf.d/*.conf /fluentd/etc/conf.d/
